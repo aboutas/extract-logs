@@ -31,14 +31,16 @@ eg
 Metrics in row 103-302 starting just after 100 that the table is finished and include all the groups of metrics till line 302 (eg org.apache.tez.common.counters.DAGCounter , File System Counters etc). Take advantage of the nesting and recreate a dictionary out of it that will contain all the metrics and the names respecting the 
 grouping. 
 {
-"org.apache.tez.common.counters.DAGCounter" : {"NUM_SUCCEEDED_TASKS": 58 , "TOTAL_LAUNCHED_TASKS" : 58 , ...} ,
+"org.apache.tez.common.counters.DAGCounter" :
+```
+ {"NUM_SUCCEEDED_TASKS": 58 , "TOTAL_LAUNCHED_TASKS" : 58 , ...} ,
 "File System Counters:" : { ... } ,
  .
  .
  .
 
 }
-
+```
 ## Notes
 The row numbers here are indicative. Please do not just parse the file and 
 read the specific row numbers since this file is a sample.
